@@ -25,6 +25,7 @@ https://github.com/fidelisrafael/slim-mvc
 
 
 ***
+https://phpocean.com/tutorials/back-end/workouts-with-slim-3-part-5-action-controllers/50
 
 http://www.alphansotech.com/blogs/php-restful-api-framework-slim-tutorial/
 
