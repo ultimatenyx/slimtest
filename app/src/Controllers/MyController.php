@@ -21,35 +21,17 @@ class MyController{
 		echo "</pre>";
 	}
 	
-	public function method2(Request $request, Response $response, $args) {
+	public function method2($request, $response, $args) {
 		//your code
 		//to access items in the container... $this->ci->get('');
 		var_dump('method2');
 	}
 	
-	public function method3(Request $request, Response $response, $args) {
+	public function method3($request, $response, $args) {
 		//your code
 		//to access items in the container... $this->ci->get('');
 		var_dump('method3');
 	}
-	public function users(Request $request, Response $response, $args)
-	{
-		$users = Users::all();
-		$this->container->view->render($response, 'list-users.twig', $users);
-	}
-
-	public function create(Request $request, Response $response, $args)
-	{
-		// proceed to creating a new user
-	}
-
-
-	public function delete(Request $request, Response $response, $args)
-	{
-		// proceed to deleting a new user
-	}
-
-
-	//...
+	
 
 }

@@ -27,6 +27,7 @@ $app = new \Slim\App($settings);
 require __DIR__ . '/../app/dependencies.php';
 
 $app->get('/method1', 'App\Controllers\MyController:method1');
+$app->post('/method1/{id}', 'App\Controllers\MyController:method1');
 $app->get('/method2', 'App\Controllers\MyController:method2');
 $app->get('/method3', '\MyController:method3');
 /* echo "<pre>";
