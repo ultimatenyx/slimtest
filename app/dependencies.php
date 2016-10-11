@@ -9,4 +9,13 @@ $container = $app->getContainer();
 $container['App\Controllers\MyController'] = function ($c) {
 	return new App\Controllers\MyController($c);
 };
+$container['notFoundHandler'] = function ($c) {
+	return function ($request, $response) use ($c) {
+		return $c['response']
+		->withStatus(404)
+		->withHeader('Content-Type', 'text/json')
+		->write('{"status":404,"msg":"Page not found"}');
+	};
+};
+
 ?>
